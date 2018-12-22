@@ -29,7 +29,7 @@ spec:
           privileged: true
       containers:
       - name: es-data
-        image: dockerkriish/k8s/elasticsearch:6.3.2
+        image: elasticsearch:6.5.1
         env:
         - name: NAMESPACE
           valueFrom:
