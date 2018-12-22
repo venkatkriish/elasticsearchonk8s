@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "elasticsearchingresshost"
+  labels:
+    component: elasticsearch
+    role: data 
+spec:
+  rules:
+  - host: elasticsearchk8s.rome.support 
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: "elasticsearch"
+          servicePort: 9200
