@@ -7,7 +7,7 @@ metadata:
     role: data 
 spec:
   rules:
-  - host: elasticsearchk8s.rome.support 
+  - host: <hostname> 
     http:
       paths:
       - path: /
