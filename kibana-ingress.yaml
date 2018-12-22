@@ -6,7 +6,7 @@ metadata:
     component: kibana
 spec:
   rules:
-  - host: kibanak8s.rome.support 
+  - host: <kibana host>
     http:
       paths:
       - path: /
