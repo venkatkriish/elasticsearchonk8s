@@ -72,8 +72,6 @@ spec:
         volumeMounts:
         - name: storage
           mountPath: /data
-      nodeSelector:
-        kops.k8s.io/instancegroup: spotnodes
       volumes:
       - name: storage
         persistentVolumeClaim:
