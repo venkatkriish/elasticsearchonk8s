@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "kibanaingresshost"
+  labels:
+    component: kibana
+spec:
+  rules:
+  - host: kibanak8s.rome.support 
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: "kibana"
+          servicePort: 80
